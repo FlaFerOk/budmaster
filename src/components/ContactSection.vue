@@ -53,9 +53,9 @@ function goTo(i) {
                 <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
                 Телефон
               </span>
-              <a href="tel:+380501376086" class="phone-link">+38 (050) 137-60-86</a>
-              <a href="tel:+380509697892" class="phone-link">+38 (050) 969-78-92</a>
-              <a href="tel:+380679137993" class="phone-link">+38 (067) 913-79-93</a>
+              <a href="tel:+380501376086" class="phone-link">+380 50-137-60-86</a>
+              <a href="tel:+380509697892" class="phone-link">+380 50-969-78-92</a>
+              <a href="tel:+380977253130" class="phone-link">+380 97-725-31-30</a>
             </div>
 
             <div class="info-divider"></div>

@@ -10,7 +10,7 @@
       
       <div class="hero-actions animate-fade-up delay-200">
         <a href="#contact" class="btn btn-primary">Зв'язатися з нами</a>
-        <a href="#features" class="btn btn-outline">Дізнатися більше</a>
+        <a href="#about" class="btn btn-outline">Дізнатися більше</a>
       </div>
     </div>
   </section>
