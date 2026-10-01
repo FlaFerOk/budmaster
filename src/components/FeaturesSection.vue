@@ -3,6 +3,7 @@ import { ref } from 'vue'
 
 // Carousel images: img1..img6
 const images = [
+  new URL('../assets/img/rainway.webp', import.meta.url).href,
   new URL('../assets/img/img1.webp', import.meta.url).href,
   new URL('../assets/img/img2.webp', import.meta.url).href,
   new URL('../assets/img/img3.webp', import.meta.url).href,
