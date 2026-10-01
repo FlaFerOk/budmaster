@@ -37,12 +37,17 @@ const features = [
   {
     icon: `<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>`,
     title: 'Ціни від виробника',
-    items: ['оплата через термінал', 'оплата готівкою', 'на картку', 'по перерахунку']
+    items: ['оплата через термінал', 'оплата готівкою', 'на картку', 'по перерахунку', 'через Е-Відновлення']
   },
   {
     icon: `<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"></path></svg>`,
     title: 'Консультація від фахівця',
     items: ['допоможемо підібрати все для вашого проєкту.']
+  },
+  {
+    icon: `<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2 7h18v1a2 2 0 01-2 2H4a2 2 0 01-2-2V7zM13 10v7.5l2.5 2.5H21M17 10v6l1 1h3M6 2v2M10 2v2M14 2v2"></path></svg>`,
+    title: 'Водостічні системи Rainway',
+    items: ['сухі стіни в будь-яку зливу', 'елементи збираються як Lego', 'весь комплект на складі — забирай та став']
   }
 ]
 </script>
@@ -55,8 +60,10 @@ const features = [
       <div class="section-header">
         <h2>Про нас</h2>
         <div class="divider"></div>
-        <p class="section-sub">Ми — ваш надійний постачальник будівельних матеріалів у Чугуєві.
-          Працюємо з програмою <span class="text-primary">Е-Відновлення</span>.</p>
+        <p class="section-sub">Ми — ваш надійний постачальник будівельних матеріалів у Чугуєві.<br>
+          Маємо в наявності водостічні системи <span class="text-primary">Rainway</span>.<br>
+          Працюємо з програмою <span class="text-primary">Е-Відновлення</span>.
+        </p>
       </div>
 
       <!-- Photo carousel -->
@@ -96,7 +103,7 @@ const features = [
       </div>
 
       <!-- Features grid -->
-      <div class="features-grid">
+      <div class="features-grid" style="">
         <div
           v-for="(feature, index) in features"
           :key="index"
@@ -269,6 +276,10 @@ const features = [
   transition: all var(--t-base);
   position: relative;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .feature-card::before {
@@ -320,6 +331,7 @@ ul { list-style: none; }
 li {
   display: flex;
   align-items: flex-start;
+  justify-content: center;
   gap: 0.75rem;
   margin-bottom: 0.5rem;
   color: var(--c-gray);
